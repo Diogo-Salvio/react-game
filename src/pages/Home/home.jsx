@@ -1,8 +1,8 @@
 import React from "react";
 
 
-import Header from '../../components/header';
-import Container from '../../components/container';
+import Header from '../../components/Header/header';
+import Main from '../../components/Main/Main';
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <div>
 
             <Header />
-            <Container />
+            <Main />
       
       </div>
     );
