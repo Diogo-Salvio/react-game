@@ -1,13 +1,13 @@
 import React from "react";
 
 import './First-section.css';
-import Button from "../input/Input";
+import Input from "../input/Input";
 
 
 const FirstSection = () => {
     return (
         <div className="first-section">
-            <Button />
+            <Input />
         </div>
     );
 }

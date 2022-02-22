@@ -1,12 +1,12 @@
 import React from "react";
 
-const Button = () => {
-    return (
-        <button className="add-button">
+import './Input.css'
 
-        </button>
+const Input = () => {
+    return (
+        <input className="input-text" />
     );
 }
 
 
-export default Button;
+export default Input;
