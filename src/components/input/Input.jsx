@@ -2,9 +2,9 @@ import React from "react";
 
 import './Input.css'
 
-const Input = () => {
+const Input = (props) => {
     return (
-        <input className="input-text" />
+        <input  className="input-text" value={props.value} onChange={props.onChange} />
     );
 }
 
