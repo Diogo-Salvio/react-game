@@ -11,7 +11,7 @@ const Main = () => {
     const [description, setDescription] = useState();
     const [addDescription, setAddDescription] = useState();
     
-
+    {console.log(addDescription)}
 
     return (
         <div className="main">
@@ -26,7 +26,7 @@ const Main = () => {
                 <Card text={addDescription} />
             </div>
 
-            {console.log(addDescription)}
+            
         </div>
     )
 };
