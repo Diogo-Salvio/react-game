@@ -10,8 +10,12 @@ const Main = () => {
 
     const [description, setDescription] = useState();
     const [addDescription, setAddDescription] = useState();
+
+    const [cardList, setCardList] = useState([{ id:0, description:"Primeiro card"},{id:1, description:"Segundo"},{id:2, description:"Terceiro"}]);
+
+
     
-    {console.log(addDescription)}
+    
 
     return (
         <div className="main">
@@ -23,7 +27,11 @@ const Main = () => {
             </div>
 
             <div className="Second-section">
-                <Card text={addDescription} />
+                {cardList.map((card) => {
+                    return (
+                        <Card text={card.description}  key={card.id}/>
+                    )
+                } )}
             </div>
 
             
