@@ -5,9 +5,7 @@ import "./header.css";
 function Header() {
     return (
         <div className="headerstyle">          
-
             <h1>CRUD</h1>
-
         </div>
     )
 }

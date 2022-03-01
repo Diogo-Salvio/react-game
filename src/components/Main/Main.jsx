@@ -13,10 +13,7 @@ const Main = () => {
 
     const [cardList, setCardList] = useState([{ id:0, description:"Primeiro card"},{id:1, description:"Segundo"},{id:2, description:"Terceiro"}]);
 
-
     
-    
-
     return (
         <div className="main">
 
@@ -33,7 +30,6 @@ const Main = () => {
                     )
                 } )}
             </div>
-
             
         </div>
     )
