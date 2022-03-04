@@ -15,3 +15,19 @@
 .card-style p {
     text-align: center;
 }
+
+.input-tar {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.input-tar::placeholder{
+    color: white;
+    font-size: 18px;
+}

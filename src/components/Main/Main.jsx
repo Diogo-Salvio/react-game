@@ -12,8 +12,7 @@ const Main = () => {
 
     const [cardList, setCardList] = useState([]);
 
-    //{ id:0, description:"Primeiro card"}
-    //Preciso fazer que o setCardList adicione a variável description em cardList
+
     
     const handleAddCard = () => {
         setCardList([...cardList, { id: Math.random(), description: description}])
