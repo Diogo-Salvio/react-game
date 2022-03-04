@@ -9,18 +9,25 @@ import './Main.css'
 const Main = () => {
 
     const [description, setDescription] = useState();
-    const [addDescription, setAddDescription] = useState();
 
-    const [cardList, setCardList] = useState([{ id:0, description:"Primeiro card"}]);
+    const [cardList, setCardList] = useState([]);
 
+    //{ id:0, description:"Primeiro card"}
+    //Preciso fazer que o setCardList adicione a variável description em cardList
     
+    const handleAddCard = () => {
+        setCardList([...cardList, { id: Math.random(), description: description}])
+        setDescription("")
+    }
+    
+
     return (
         <div className="main">
 
 
             <div className="First-section">
                 <Input value={description} onChange={(e) => setDescription(e.target.value)} />
-                <Button onClick={() => setAddDescription(description)} />
+                <Button onClick={() => handleAddCard() } />
             </div>
 
             <div className="Second-section">
@@ -30,7 +37,7 @@ const Main = () => {
                     )
                 } )}
             </div>
-            
+                
         </div>
     )
 };
