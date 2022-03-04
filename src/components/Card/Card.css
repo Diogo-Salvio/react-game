@@ -26,8 +26,21 @@
     width: 100%;
     
 }
-
 .input-tar::placeholder{
     color: white;
     font-size: 18px;
+}
+
+.text-area {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: QuickSand;
+    text-align: center;
+    color: white;
+    outline: none;
+    border: none;
+    resize: none;
 }

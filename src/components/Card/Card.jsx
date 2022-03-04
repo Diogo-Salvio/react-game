@@ -6,7 +6,7 @@ const Card = (props) => {
     return (
         <div className="card-style">
             <input type='text' placeholder="Nome da Tarefa" className="input-tar"/>
-            <p>{props.text}</p>
+            <textarea className="text-area" cols="100%">{props.text}</textarea>
 
         </div>
     );
