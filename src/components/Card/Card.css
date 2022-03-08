@@ -44,3 +44,12 @@
     border: none;
     resize: none;
 }
+
+.button {
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 90%;
+}
